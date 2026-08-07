@@ -54,7 +54,7 @@ ATP-Website/
 1. Clone the repository.
 
 ```bash
-git clone https://github.com/Gaia-Kipling/ATP-Website.git
+git clone https://github.com/Gaia-Kipling/ATP-Counselling-Coaching.git
 ```
 
 2. Open the project folder.
