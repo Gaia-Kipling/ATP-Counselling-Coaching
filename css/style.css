@@ -719,8 +719,10 @@ p {
         gap: 9px;
     }
 
-    .brand-text {
-        display: flex;
+    .custom-navbar .brand-text {
+        display: flex !important;
+        visibility: visible;
+        opacity: 1;
     }
 
     .brand-text h2 {
