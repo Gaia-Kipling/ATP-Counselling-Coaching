@@ -642,6 +642,10 @@ p {
         padding: 15px 0;
     }
 
+    .navbar-brand {
+        gap: 12px;
+    }
+
     .brand-text {
         display: none;
     }
@@ -709,6 +713,24 @@ p {
 
     .navbar-brand img {
         height: 50px;
+    }
+
+    .navbar-brand {
+        gap: 9px;
+    }
+
+    .brand-text {
+        display: flex;
+    }
+
+    .brand-text h2 {
+        max-width: 150px;
+        font-size: .85rem;
+    }
+
+    .brand-text span {
+        font-size: .67rem;
+        letter-spacing: .25px;
     }
 
 }
@@ -3424,4 +3446,46 @@ p {
     color: #fff;
 
     box-shadow: 0 20px 45px rgba(63,141,140,.30);
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    outline: 3px solid var(--primary-dark);
+    outline-offset: 3px;
+}
+
+.form-guidance {
+    margin: 8px 0 0;
+    color: var(--text);
+    font-size: .875rem;
+    line-height: 1.5;
+}
+
+.form-guidance a {
+    color: var(--primary-dark);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.form-honeypot {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+    }
 }
