@@ -3298,6 +3298,62 @@ p {
 
 }
 
+/*======================================================================
+    SMALL-SCREEN REFINEMENTS
+    Applied only on phones to improve reachability, legibility, and fit.
+======================================================================*/
+
+@media (max-width: 576px) {
+
+    .container {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .navbar-brand {
+        min-width: 0;
+    }
+
+    .brand-text h2 {
+        max-width: 135px;
+        line-height: 1.15;
+    }
+
+    .navbar-toggler {
+        flex: 0 0 auto;
+        margin-left: auto;
+    }
+
+    .hero-content p {
+        line-height: 1.65;
+        margin-bottom: 30px;
+    }
+
+    .hero-buttons .btn,
+    .welcome-buttons .btn,
+    .contact-form .btn {
+        min-height: 52px;
+    }
+
+    .contact-form .form-control,
+    .contact-form .form-select {
+        font-size: 16px;
+    }
+
+    .contact-form textarea.form-control {
+        min-height: 140px;
+    }
+
+    .location-section iframe {
+        height: 360px;
+    }
+
+    .footer-links a {
+        display: inline-block;
+        padding: 5px 0;
+    }
+}
+
 .hero,
 .hero-section,
 .about-hero,
