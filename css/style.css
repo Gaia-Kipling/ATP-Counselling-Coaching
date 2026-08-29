@@ -1880,6 +1880,10 @@ p {
 
 }
 
+.about-story-layout .about-image::after{
+    display:none;
+}
+
 .about-image:hover img{
 
     transform:scale(1.04);
@@ -3326,6 +3330,29 @@ p {
         gap:8px;
     }
 
+}
+
+.credentials-section .credential-card{
+    padding:36px 30px;
+    background:var(--white);
+    border:1px solid var(--border);
+    border-radius:var(--radius-md);
+    box-shadow:var(--shadow-sm);
+    transition:transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+}
+
+.credentials-section .credential-card h4{
+    margin-bottom:16px;
+}
+
+.credentials-section .credential-card p{
+    margin-bottom:0;
+}
+
+.credentials-section .credential-card:hover{
+    transform:translateY(-6px);
+    border-color:rgba(63,141,140,.35);
+    box-shadow:var(--shadow-lg);
 }
 
 /*======================================================================
