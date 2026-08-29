@@ -1490,6 +1490,19 @@ p {
     height: 85px;
 }
 
+.footer-logo {
+    display: inline-flex;
+    vertical-align: middle;
+}
+
+.footer-logo + h3 {
+    display: inline-flex;
+    align-items: center;
+    height: 85px;
+    margin: 0 0 0 20px;
+    vertical-align: middle;
+}
+
 .site-footer h3,
 .site-footer h4,
 .site-footer h5 {
@@ -3306,6 +3319,17 @@ p {
 ======================================================================*/
 
 @media (max-width: 576px) {
+
+    .footer-logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-logo + h3 {
+        display: block;
+        height: auto;
+        margin: 0 0 .5rem;
+    }
 
     .container {
         padding-right: 20px;
