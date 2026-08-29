@@ -3377,6 +3377,62 @@ p {
     box-shadow:var(--shadow-lg);
 }
 
+@media (min-width:992px){
+
+    .why-atp-section > .container > .row{
+        display:grid;
+        grid-template-columns:minmax(0, 1fr) minmax(0, 1fr);
+        grid-template-areas:
+            "image content"
+            "image button";
+        column-gap:48px;
+        row-gap:0;
+        margin-right:0;
+        margin-left:0;
+        align-items:center !important;
+    }
+
+    .why-atp-section .why-atp-image,
+    .why-atp-section .why-atp-content,
+    .why-atp-section .why-atp-button{
+        width:auto;
+        max-width:none;
+        padding-right:0;
+        padding-left:0;
+    }
+
+    .why-atp-section .why-atp-image{
+        grid-area:image;
+        align-self:center;
+    }
+
+    .why-atp-section .why-atp-content{
+        grid-area:content;
+    }
+
+    .why-atp-section .why-atp-button{
+        grid-area:button;
+        align-self:start;
+    }
+
+}
+
+@media (min-width:577px) and (max-width:991px){
+
+    .why-atp-section .why-atp-image{
+        order:1;
+    }
+
+    .why-atp-section .why-atp-content{
+        order:2;
+    }
+
+    .why-atp-section .why-atp-button{
+        order:3;
+    }
+
+}
+
 /*======================================================================
     SMALL-SCREEN REFINEMENTS
     Applied only on phones to improve reachability, legibility, and fit.
