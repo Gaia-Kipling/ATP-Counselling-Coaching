@@ -1968,6 +1968,28 @@ p {
 
 }
 
+@media (min-width:992px){
+
+    #about-story .about-story-layout > .row{
+        display:grid;
+        grid-template-columns:minmax(0, 1fr) minmax(0, 1fr);
+        gap:40px;
+        align-items:start !important;
+    }
+
+    #about-story .about-story-layout > .row > .col-lg-6{
+        width:auto;
+        max-width:none;
+        padding-right:0;
+        padding-left:0;
+    }
+
+    #about-story .about-biography{
+        border-left:0;
+    }
+
+}
+
 
 /*======================================================================
     ABOUT CARDS
