@@ -3396,6 +3396,26 @@ p {
         padding-left: 20px;
     }
 
+    #about-story .about-story-layout {
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+
+    #about-story .about-story-layout > .row {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    #about-story .about-story-layout .about-image,
+    #about-story .about-story-layout .about-biography {
+        width: 100%;
+    }
+
+    .credentials-section .credential-card {
+        width: 100%;
+        padding: 30px 24px;
+    }
+
     .welcome-section .feature-list {
         padding: 0;
         list-style: none;
