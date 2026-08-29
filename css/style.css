@@ -1981,6 +1981,32 @@ p {
 
 @media (min-width:992px){
 
+    .contact-benefits-section .container{
+        width:100%;
+        max-width:none;
+    }
+
+    .contact-benefits-section .contact-benefits-grid{
+        display:grid !important;
+        grid-template-columns:repeat(4, minmax(0, 1fr)) !important;
+        grid-auto-flow:column;
+        gap:24px;
+        width:100%;
+        margin-right:0;
+        margin-left:0;
+    }
+
+    .contact-benefits-section .contact-benefits-grid > [class*="col-"]{
+        width:100%;
+        max-width:none;
+        padding-right:0;
+        padding-left:0;
+    }
+
+    .contact-benefits-section .contact-benefits-grid .service-card{
+        width:100%;
+    }
+
     #about-story .about-story-layout > .row{
         display:grid;
         grid-template-columns:minmax(0, 1fr) minmax(0, 1fr);
