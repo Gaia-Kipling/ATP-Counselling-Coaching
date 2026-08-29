@@ -1472,6 +1472,17 @@ p {
     margin-top: 10px;
 }
 
+.contact-form .form-privacy-statement {
+    max-width: 100%;
+    margin: 18px 0 0;
+    line-height: 1.6;
+    overflow-wrap: break-word;
+}
+
+.contact-form div.form-privacy-statement {
+    order: 2;
+}
+
 
 /*======================================================================
     13. FOOTER

@@ -94,19 +94,12 @@ function initialiseEnquiryForms() {
         form.prepend(honeypot);
 
         const privacyCheckbox = form.querySelector("#privacy");
-        if (privacyCheckbox) {
-            privacyCheckbox.setAttribute("aria-describedby", "privacy-notice");
-            const privacyNotice = document.createElement("p");
-            privacyNotice.id = "privacy-notice";
-            privacyNotice.className = "form-guidance";
-            privacyNotice.innerHTML = 'Read our <a href="privacy.html">Privacy Policy</a> to understand how your enquiry is handled.';
-            privacyCheckbox.closest(".form-check").insertAdjacentElement("afterend", privacyNotice);
-        } else if (submitButton) {
+        if (!privacyCheckbox && submitButton) {
             const consentId = `privacy-consent-${index + 1}`;
             const consent = document.createElement("div");
-            consent.className = "form-check mb-4";
+            consent.className = "form-check form-privacy-statement";
             consent.innerHTML = `<input class="form-check-input" type="checkbox" id="${consentId}" required><label class="form-check-label" for="${consentId}">I understand that my information will only be used to respond to my enquiry, as described in the <a href="privacy.html">Privacy Policy</a>.</label>`;
-            submitButton.parentElement.insertAdjacentElement("beforebegin", consent);
+            submitButton.insertAdjacentElement("afterend", consent);
         }
 
         form.addEventListener("submit", () => {
