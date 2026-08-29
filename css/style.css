@@ -3312,6 +3312,24 @@ p {
         padding-left: 20px;
     }
 
+    .welcome-section .feature-list {
+        padding: 0;
+        list-style: none;
+        text-align: left;
+    }
+
+    .welcome-section .feature-list li {
+        display: flex;
+        align-items: flex-start;
+        gap: 15px;
+        width: 100%;
+        text-align: left;
+    }
+
+    .welcome-section .feature-list li + li {
+        margin-top: 15px;
+    }
+
     .navbar-brand {
         min-width: 0;
     }
