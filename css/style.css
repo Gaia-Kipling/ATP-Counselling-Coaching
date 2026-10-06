@@ -3454,6 +3454,28 @@ p {
 
 }
 
+@media (min-width:992px){
+
+    .why-atp-section.contact-benefits-section > .container > .contact-benefits-grid{
+        display:grid !important;
+        grid-template-columns:repeat(4, minmax(0, 1fr)) !important;
+        grid-template-areas:none !important;
+        grid-auto-flow:row !important;
+        gap:24px;
+        width:100%;
+        margin-left:0;
+        margin-right:0;
+    }
+
+    .why-atp-section.contact-benefits-section > .container > .contact-benefits-grid > [class*="col-"]{
+        width:100% !important;
+        max-width:none !important;
+        padding-left:0 !important;
+        padding-right:0 !important;
+    }
+
+}
+
 @media (min-width:577px) and (max-width:991px){
 
     .why-atp-section .why-atp-image{
