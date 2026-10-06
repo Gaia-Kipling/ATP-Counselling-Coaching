@@ -2341,7 +2341,6 @@ p {
 
 }
 
-
 /*======================================================================
     15. SERVICES PAGE
 ======================================================================*/
@@ -3005,6 +3004,18 @@ p {
 
 }
 
+/* Preserve the Services hero wave's visible curve below desktop widths. */
+@media (max-width:991px){
+
+    .services-hero .hero-divider{
+        bottom:-1px;
+    }
+
+    .services-hero .hero-divider svg{
+        height:90px;
+    }
+
+}
 
 /*======================================================================
     PRIVACY POLICY
