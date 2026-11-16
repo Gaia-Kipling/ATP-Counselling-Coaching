@@ -8,8 +8,6 @@ A modern, responsive website for **ATP Counselling & Coaching**, designed to pro
 - Modern, accessible user interface
 - Counselling and coaching service information
 - Contact and enquiry form
-- Privacy Policy
-- Terms & Conditions
 - Custom 404 page
 - Thank You confirmation page
 - WhatsApp integration
@@ -29,24 +27,22 @@ A modern, responsive website for **ATP Counselling & Coaching**, designed to pro
 
 ```
 ATP-Website/
-│
-├── css/
-│   └── style.css
-│
-├── js/
-│   └── script.js
-│
-├── images/
-│
-├── index.html
-├── about.html
-├── services.html
-├── contact.html
-├── privacy.html
-├── terms.html
-├── thank-you.html
-├── 404.html
-└── README.md
+â”‚
+â”œâ”€â”€ css/
+â”‚   â””â”€â”€ style.css
+â”‚
+â”œâ”€â”€ js/
+â”‚   â””â”€â”€ script.js
+â”‚
+â”œâ”€â”€ images/
+â”‚
+â”œâ”€â”€ index.html
+â”œâ”€â”€ about.html
+â”œâ”€â”€ services.html
+â”œâ”€â”€ contact.html
+â”œâ”€â”€ thank-you.html
+â”œâ”€â”€ 404.html
+â””â”€â”€ README.md
 ```
 
 ## Installation
@@ -93,4 +89,4 @@ Higher Certificate in Mobile Application and Web Development
 
 This project is the intellectual property of ATP Counselling & Coaching.
 
-© 2026 ATP Counselling & Coaching. All rights reserved.
+Â© 2026 ATP Counselling & Coaching. All rights reserved.

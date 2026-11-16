@@ -1,4 +1,4 @@
-/*======================================================================
+﻿/*======================================================================
     ATP COUNSELLING & COACHING
     PRODUCTION STYLESHEET
     VERSION 3.0
@@ -1205,7 +1205,7 @@ p {
 
 .review-card::before {
 
-    content: "“";
+    content: "â€œ";
 
     position: absolute;
 
@@ -3045,7 +3045,7 @@ p {
 
 .privacy-list li::before{
 
-    content:"✓";
+    content:"âœ“";
 
     position:absolute;
 
@@ -3822,4 +3822,24 @@ select:focus-visible {
         animation-iteration-count: 1 !important;
         transition-duration: .01ms !important;
     }
+}
+
+/* Darling Digital credit beneath footer content */
+.site-footer .footer-credit,\n.footer .footer-credit {
+    margin-top: 24px;
+    padding-top: 16px;
+    border-top: 1px solid rgba(255,255,255,.12);
+    text-align: center;
+}
+
+.site-footer .footer-credit p,\n.footer .footer-credit p {
+    margin: 0;
+    color: rgba(255,255,255,.62);
+    font-size: .82rem;
+    line-height: 1.6;
+}
+
+.site-footer .footer-credit .footer-credit-slogan,\n.footer .footer-credit .footer-credit-slogan {
+    color: rgba(255,255,255,.48);
+    font-size: .74rem;
 }

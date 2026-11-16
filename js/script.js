@@ -1,4 +1,4 @@
-/*==========================================================*
+﻿/*==========================================================*
  * ATP COUNSELLING & COACHING
  * VERSION 3.0
  * MAIN JAVASCRIPT
@@ -93,21 +93,12 @@ function initialiseEnquiryForms() {
         honeypot.innerHTML = '<label for="website">Leave this field blank</label><input id="website" name="_honey" type="text" tabindex="-1" autocomplete="off">';
         form.prepend(honeypot);
 
-        const privacyCheckbox = form.querySelector("#privacy");
-        if (!privacyCheckbox && submitButton) {
-            const consentId = `privacy-consent-${index + 1}`;
-            const consent = document.createElement("div");
-            consent.className = "form-check form-privacy-statement";
-            consent.innerHTML = `<input class="form-check-input" type="checkbox" id="${consentId}" required><label class="form-check-label" for="${consentId}">I understand that my information will only be used to respond to my enquiry, as described in the <a href="privacy.html">Privacy Policy</a>.</label>`;
-            submitButton.insertAdjacentElement("afterend", consent);
-        }
-
         form.addEventListener("submit", () => {
             if (!form.checkValidity() || !submitButton) return;
 
             submitButton.disabled = true;
             submitButton.setAttribute("aria-busy", "true");
-            submitButton.textContent = "Sending enquiry…";
+            submitButton.textContent = "Sending enquiryâ€¦";
         });
 
     });
