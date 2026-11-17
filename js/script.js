@@ -98,7 +98,7 @@ function initialiseEnquiryForms() {
 
             submitButton.disabled = true;
             submitButton.setAttribute("aria-busy", "true");
-            submitButton.textContent = "Sending enquiryâ€¦";
+            submitButton.textContent = "Sending enquiry…";
         });
 
     });

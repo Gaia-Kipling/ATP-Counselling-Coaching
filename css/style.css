@@ -1205,7 +1205,7 @@ p {
 
 .review-card::before {
 
-    content: "â€œ";
+    content: "“";
 
     position: absolute;
 
@@ -1225,6 +1225,10 @@ p {
     justify-content: center;
 
     gap: 6px;
+
+    color: #F4B400;
+    font-size: 1.25rem;
+    line-height: 1;
 
     margin-bottom: 25px;
 }
@@ -3045,7 +3049,7 @@ p {
 
 .privacy-list li::before{
 
-    content:"âœ“";
+    content:"✓";
 
     position:absolute;
 
